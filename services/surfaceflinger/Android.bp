@@ -18,6 +18,7 @@ cc_defaults {
         "-DGL_GLEXT_PROTOTYPES",
         "-DEGL_EGLEXT_PROTOTYPES",
     ],
+
     shared_libs: [
         "android.frameworks.vr.composer@1.0",
         "android.hardware.configstore-utils",
@@ -95,11 +96,11 @@ cc_defaults {
     defaults: ["libsurfaceflinger_defaults"],
     cflags: [
         "-fvisibility=hidden",
-        "-fwhole-program-vtables", // requires ThinLTO
+        //"-fwhole-program-vtables", // requires ThinLTO
     ],
-    lto: {
-        thin: true,
-    },
+    //lto: {
+    //    thin: false,
+    //},
 }
 
 cc_library_headers {

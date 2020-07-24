@@ -70,15 +70,15 @@ cc_library_static {
         "-Werror=format",
     ],
     cppflags: [
-        "-fwhole-program-vtables", // requires ThinLTO
+        //"-fwhole-program-vtables", // requires ThinLTO
     ],
     srcs: [
         ":librenderengine_sources",
         ":librenderengine_gl_sources",
     ],
-    lto: {
-        thin: true,
-    },
+    //lto: {
+    //    thin: true,
+    //},
 }
 
 cc_library_static {

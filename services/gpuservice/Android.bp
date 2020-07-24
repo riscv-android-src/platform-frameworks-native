@@ -49,10 +49,10 @@ cc_defaults {
     defaults: ["gpuservice_defaults"],
     cflags: [
         "-fvisibility=hidden",
-        "-fwhole-program-vtables", // requires ThinLTO
+        //"-fwhole-program-vtables", // requires ThinLTO
     ],
     lto: {
-        thin: true,
+        thin: false,
     },
 }
 

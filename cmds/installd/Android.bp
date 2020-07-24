@@ -59,11 +59,12 @@ cc_defaults {
     tidy_checks: [
         "-*",
         "clang-analyzer-security*",
-        "cert-*",
-        "-cert-err58-cpp",
+        //FIXME: "cert-*",
+        //FIXME: "-cert-err58-cpp",
     ],
     tidy_flags: [
-        "-warnings-as-errors=clang-analyzer-security*,cert-*"
+        //FIXME: "-warnings-as-errors=clang-analyzer-security*,cert-*"
+        "-warnings-as-errors=clang-analyzer-security*"
     ],
 }
 
