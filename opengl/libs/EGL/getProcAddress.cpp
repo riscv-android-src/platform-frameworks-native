@@ -182,7 +182,12 @@ namespace android {
                                           ext.extensions[_api]))    \
                 :                                                   \
             );
+#elif defined(__riscv)
+    //todo: add risv64 implementation
+    #define API_ENTRY(_api) __attribute__((noinline)) _api
 
+    #define CALL_GL_EXTENSION_API(_api)
+    
 #endif
 
 #if defined(CALL_GL_EXTENSION_API)
