@@ -120,7 +120,7 @@ cc_library_static {
     ],
     whole_static_libs: ["libskia_renderengine"],
     //lto: {
-    //    thin: true,
+    //    thin: false,
     //},
 }
 
